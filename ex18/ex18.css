@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Magic';
+    src: url('Magic Retro.ttf') format('true type');
+}
+
+h1{
+    font-family: 'Magic','time', 'sans-serif';
+}
+p{
+    font-family: 'Magic','time', 'sans-serif';
+}
+
