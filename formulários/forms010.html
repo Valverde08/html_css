@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Idade</h1>
+    <form action="">
+        <p>
+            <label for="iano">Ano de nascimento</label>
+            <input type="number" name="Ano" id="iano" min="1920"
+            max="2023" required oninput="cal()">
+        </p>
+
+        <p>
+            <label for="iidade">Sua idade é :</label>
+            <output id="ires">xxxx</output>
+        </p>
+    </form>
+    <script>
+        function cal(){
+                let ano=new Date().getFullYear()
+                soma = Number(ano) - Number(iano.value)
+
+                ires.innerHTML = soma
+            }
+    </script>
+</body>
+</html>
