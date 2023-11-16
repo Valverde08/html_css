@@ -36,6 +36,17 @@
             </p>
         </article>
     </main>
-    
+<script>
+    let menu = document.querySelector("#burger")
+    menu.addEventListener('click', ()=>{
+        const element = document.querySelector('ul') 
+        if(element.style.display =='none'){
+            element.style.display ='block'
+        } else{
+            element.style.display ='none' 
+        }
+        
+    })
+</script>   
 </body>
 </html>
