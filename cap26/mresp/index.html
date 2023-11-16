@@ -7,9 +7,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     
     <link rel="stylesheet" href="estilo/style.css" media="all">
+    <link rel="stylesheet" href="estilo/mediaquery.css">
     
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
         <span class="material-symbols-outlined" id="burger">menu</span>
@@ -38,8 +39,22 @@
     </main>
 <script>
     let menu = document.querySelector("#burger")
+    let element = document.querySelector('ul') 
+    function mudouTamanho(){
+        if(window.innerWidth >= 768){
+            element.style.display = "block"
+        } else {
+            element.style.display = "none"
+        }
+           
+               
+    
+
+    }
+
+    
     menu.addEventListener('click', ()=>{
-        const element = document.querySelector('ul') 
+       
         if(element.style.display =='none'){
             element.style.display ='block'
         } else{
