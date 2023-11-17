@@ -8,7 +8,7 @@
 }
 
 html, body{
-    background-color: #5f2c82;
+    background-color: #3B1C08;
     height: 10vh;
     width: 100vw;
    
@@ -47,3 +47,13 @@ main{
     padding: 10px;
 }
 
+#formulario > h1{
+    text-align: center;
+    padding-bottom: 10px;
+}
+#formulario > p{
+    padding-bottom: 10px;
+}
+#botao{
+    padding: 0px 20px;
+}
